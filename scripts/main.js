@@ -8,7 +8,7 @@ function fetchUsers(data) {
     for (let i = 0; i < data.length; i++) {
         const element = data[i];
         let contenJs = `
-             <div class="col">
+             <div class="col col-lg-4 py-5">
                 <div class="card mb-3" style="width: 18rem;">
                     <div class="card-header">
                         Nombre: ${element.name}
