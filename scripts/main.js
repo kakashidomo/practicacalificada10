@@ -8,16 +8,16 @@ function fetchUsers(data) {
     for (let i = 0; i < data.length; i++) {
         const element = data[i];
         let contenJs = `
-        <div class="col">
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
+             <div class="col">
+                <div class="card mb-3" style="width: 18rem;">
                     <div class="card-header">
-                        <h3>Nombre: ${element.name}</h3>
+                        Nombre: ${element.name}
                     </div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">Usuario: ${element.username}</h5>
-                        <h5 class="card-title">Email: ${element.email}</h5>
-                        <h5 class="card-title">Empresa: ${element.company.name}</h5>
-                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Usuario: ${element.username}</li>
+                        <li class="list-group-item">Email: ${element.email}</li>
+                        <li class="list-group-item">Empresa: ${element.company.name}</li>
+                    </ul>
                 </div>
             </div>
         `
